@@ -29,7 +29,7 @@ Demonstrar habilidades em React, consumo de APIs REST e criação de interfaces 
    git clone https://github.com/gnevez/AvantiReact.git
    cd AvantiReact
    ```
-   Instale as dependências
+2. **Instale as dependências**
 
 ```bash
 npm start
