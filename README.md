@@ -31,11 +31,11 @@ Demonstrar habilidades em React, consumo de APIs REST e criação de interfaces 
    ```
 2. **Instale as dependências**
 
-```bash
-npm start
-# ou
-yarn start
-```
+   ```bash
+   npm start
+   # ou
+   yarn start
+   ```
 Acesse em http://localhost:3000.
 
 # Build para produção
@@ -51,17 +51,6 @@ yarn build
 ![image](https://github.com/user-attachments/assets/dc3ea5f4-9f84-4155-a18c-2b99d31d1f8e)
 
 
-## 🔗 Deploy (Opcional)
-GitHub Pages:
-
-**Instale e configure o pacote gh-pages no package.json.**
-
-Adicione os scripts:
-
-```
-"predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-```
 
 📫 Contato
 Email: guilhermenferraz@gmail.com
