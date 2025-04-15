@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+# Projeto: Projeto React Innovation Class – Avanti
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma **réplica fiel de um mockup no Figma**, desenvolvido em **React**, que consome a **GitHub REST API** e exibe um **card** com nome, foto e bio do usuário buscado. Feito como parte do teste técnico para o programa de estágio **Innovation Class** da **Avanti**.
 
-Currently, two official plugins are available:
+## 📋 Objetivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Demonstrar habilidades em React, consumo de APIs REST e criação de interfaces responsivas e organizadas a partir de um design estático no Figma.
 
-## Expanding the ESLint configuration
+## 🛠 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** (Create React App)  
+- **JavaScript (ES6+)**  
+- **Fetch API**  
+- **CSS Modules**
+- **Tailwind CSS**
+- **Figma** (para o mockup)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## ⚙️ Funcionalidades
+
+- **Busca de usuário GitHub**: ao digitar um username, a aplicação consulta a API do GitHub e retorna dados públicos.  
+- **Card de perfil**: exibe avatar, nome, bio e link para o perfil no GitHub.  
+- **Tratamento de erros**: mensagens amigáveis caso o usuário não exista ou falhe a requisição.  
+- **Design responsivo**: segue fielmente o layout do mockup, adaptando-se a diferentes larguras de tela.
+
+## 🚀 Como executar
+
+1. **Clone o repositório**  
+   ```bash
+   git clone https://github.com/gnevez/AvantiReact.git
+   cd AvantiReact
+   ```
+   Instale as dependências
+
+```bash
+npm start
+# ou
+yarn start
+```
+Acesse em http://localhost:3000.
+
+# Build para produção
+
+```bash
+npm run build
+# ou
+yarn build
+```
+**Os arquivos otimizados ficarão em build/.**
+
+## 📸 Screenshots
+![image](https://github.com/user-attachments/assets/dc3ea5f4-9f84-4155-a18c-2b99d31d1f8e)
+
+
+## 🔗 Deploy (Opcional)
+GitHub Pages:
+
+**Instale e configure o pacote gh-pages no package.json.**
+
+Adicione os scripts:
+
+```
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+📫 Contato
+Email: guilhermenferraz@gmail.com
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+LinkedIn: https://www.linkedin.com/in/guilherme-neves-a749052a2
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+GitHub: https://github.com/gnevez
+
