@@ -8,10 +8,10 @@ Demonstrar habilidades em React, consumo de APIs REST e criação de interfaces 
 
 ## Tecnologias Utilizadas
 
-- **React** (Create React App)  
-- **JavaScript (ES6+)**  
+- **React** 
+- **JavaScript**  
 - **Fetch API**  
-- **CSS Modules**
+- **CSS**
 - **Tailwind CSS**
 - **Figma** (para o mockup)
 
